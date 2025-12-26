@@ -7,266 +7,308 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">VINYL</div>
-        <input type="text" placeholder="Search records...." class="search"/>
-        <nav class="nav-links">
-            <a href="https://www.therevolverclub.com/">Home</a>
-            <a href="https://www.therevolverclub.com/collections/new-vinyl">Genres</a>
-            <a href="https://www.therevolverclub.com/pages/shop-by-artist-band">Artists</a>
-            <a href="#">Cart</a>
+<input type="checkbox" id="menu-toggle">
 
-        </nav>
+<header class="navbar">
+ 
+  
+  <div class="nav-top">
+    <div class="nav-spacer"></div>
 
-    </header>
+    <img
+      src="https://www.therevolverclub.com/cdn/shop/files/TRC_Logo_HighRes_1f1147db-ab8a-4f7a-88f6-a5319791aecb.png?v=1714556628&width=380"
+      alt="The Revolver Club"
+      class="logo"
+    />
 
-    <div class="container">
-        <aside class="sidebar">
-            <div class="menu">
-                <h3>Made For You</h3>
-                <ul>
-                    <li><b>Daily Vinyl</b></li>
-                    <li><b>Classics</b></li>
-                    <li><b>Indie Picks</b></li>
-                </ul>
+    <label for="menu-toggle" class="menu-btn">☰</label>
+  </div>
 
-            </div>
-            <div class="menu">
-                <h3>Daily mixes</h3>
-                <ul>
-                    <li><b>Rock Mix</b></li>
-                    <li><b>Jazz mix</b></li>
-                    <li><b>Hip Hop mix</b></li>
-                </ul>
+  
+  <div class="nav-bottom">
+    <input
+      type="text"
+      class="search"
+      placeholder="Search records..."
+    />
 
-            </div>
-            <div class="menu">
-                <h3>Jump Back in</h3>
-                <ul>
-                    <li><b>Recently saved</b></li>
-                    <li><b>Saved albums</b></li>
-                </ul>
+    <nav class="nav-links">
+      <a href="https://www.therevolverclub.com/">Home</a>
+      <a href="https://www.therevolverclub.com/collections/new-vinyl">Genres</a>
+      <a href="https://www.therevolverclub.com/pages/shop-by-artist-band">Artists</a>
+      <a href="#">Cart</a>
+    </nav>
+  </div>
+</header>
 
-            </div>
-            <div class="menu">
-                <h3>Recent Albums</h3>
-                <ul>
-                    <li><b>New Releases</b></li>
-                    <li><b>Top sellers</b></li>
-                   
-                </ul>
+ <aside class="sidebar">
+   <label for="menu-toggle" class="close-btn">✕</label>
+   <div class="menu">
+    <h3>Made For You</h3>
+    <ul>
+      <li><b>Daily Vinyl</b></li>
+      <li><b>Classics</b></li>
+      <li><b>Indie Picks</b></li>
+    </ul>
+   </div>
+   <div class="menu">
+   <h3>Daily mixes</h3>
+   <ul>
+     <li><b>Rock Mix</b></li>
+     <li><b>Jazz mix</b></li>
+     <li><b>Hip Hop mix</b></li>
+   </ul>
+   </div>
+   <div class="menu">
+   <h3>Jump Back in</h3>
+   <ul>
+     <li><b>Recently saved</b></li>
+     <li><b>Saved albums</b></li>
+    </ul>
+   </div>
+   <div class="menu">
+   <h3>Recent Albums</h3>
+   <ul>
+      <li><b>New Releases</b></li>
+      <li><b>Top sellers</b></li>
+    </ul>
+   </div>
+  </aside>
 
-            </div>
-            
-
-        </aside>
-        <main class="content">
-            <h2>New Vinyl</h2>
-            <div class="grid">
+  <div class="overlay"></div>
+       
+  <main class="content">
+     <h2>Discover Vinyls</h2>
+     <div class="grid">
+      <a href="https://www.therevolverclub.com/products/billie-eilish-hit-me-hard-and-soft?_pos=2&_psq=hit+me+hard&_ss=e&_v=1.0" target="_blank" class="card">
+      <img src="data:image/jpeg;base64,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" alt="Vinyl Album">  
+      <h4>HIT ME HARD AND SOFT</h4>
+      <p>Billie Eilish</p>
+      </a>
                 
-                <a href="https://www.therevolverclub.com/products/billie-eilish-hit-me-hard-and-soft?_pos=2&_psq=hit+me+hard&_ss=e&_v=1.0" target="_blank" class="card">
-                  <img src="data:image/jpeg;base64,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" alt="Vinyl Album">  
-                    <h4>HIT ME HARD AND SOFT</h4>
-                    <p>Billie Eilish</p>
-                </a>
                 
+      <a href="https://www.therevolverclub.com/products/billie-eilish-when-we-all-fall-asleep-where-do-we-go?_pos=2&_psq=when+we+all+fal&_ss=e&_v=1.0" target="_blank" class="card">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDQ8NDxAPDw8NDw8PDw0PDw8PDw4NFREWFhURFRUYHSggGBolGxUVITEiJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFRAQFSsdFR0rKystKy0tKy0rKy0tLS0tLSsrLSsrKystLS0tLS0tLSstLS0rKzcrLTcrLS0rLS0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABAEAACAQIDBQUECAUCBwEAAAAAAQIDEQQSIQUGEzFRQWFxgZEiMkKhBxRScrHB0fAjU4KSwiTxJTVUY4OT4RX/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAHhEBAQEBAAICAwAAAAAAAAAAAAERAiExEnEDQWH/2gAMAwEAAhEDEQA/APDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAgEgAAAAAAgEgCASQAAAAAAAAAAAAEgCAAAAAAAkAASkBBNipIqUAKLCxeVMnhgWLCxecCMgFmwLrgUuIFAsS0RYCASQAIJAEAkgAAAAAAAAAAAABIAkgqSAJFSQSLkYgIxLsYEwgX4QIKI0yrhl+MSpxCsOUbFniR8O/sMtRUqlvspvTrY67AfRtXqYGGJlXpU5VIKaoOMpPK9Y5muUrNdSWye1nNvpxXDKHTLmHTUpU5LWLa8GnZovSplZYMoFDiZsoFqVMoxGiC9KBQ0BQCbEAQCSAIBIAgAAAAAAAEgEgEVpEJFyMQJii7CJEIl6ESCqES/CJTCJeggqYxLipX8ub7EXKFGUnaKu0nLwildyfRJHfYfZCwWz1X4Kq4iUM9pycIQlZytprJpWbSsloS0eYO9Otr3P1/8Ah69halX/APOU6mLpwisLB3ShGULd77ciejvdnk+Jm5wU3rUXvy1s223+Z0ezduKOB4eIhUqRlHKqlGEG0kvcqKTt4SM9zcdPxdSW65/eShThj6n1eWeOlVP2uctXG8m2+fPvIy3SfVXMaVRpqbXvyd0+yL0S8kjZOnZW6G3O+2FKBalAzJRLUogYc4GPOBnSiWakQMJoixdnEttFRSQVMpYEAkgAQSQBIAAgkglASSiCpAVRReiiiBfgiCuES9GJTCJfjEKRiXoRIjEyKFNtpJXbaSXV9APRvow3WVejVxNRtRqTVGEUl7UYyUpXfS9uXPKd3vfho/V5pJJxoyhTWiWeejfjYu7lYH6vgqOGeVSo01nimm+NL25385M1O1tqcfaSwkcr4VObyyklHiyjlV/BSbOdrcjy3D7Ebp5eG3nm1ddOV7c3q0dZuNuquK6VanKVOm6sZ5o2jm7E9b8uR1OztkU4Sc1JVJRabrtWoUndP2b+++ht6UqdCE5t5afNN+9Ubd/NsW6SY8V3r3aUcXiI04ZYQklGCvbM4uTfhZN+aRpZQ0Xgj2yGyuPTxOOaV69OXBjzSa7e/wB2K8meNYWEqzmoxdqSXEk3pFvkvxNSs2MGUSzKJscThpQk4SVmuaMWdMqMKUSzOJmzgWZwKMCpAx5RNlKk32XMapRfR+gGEyGXZxLckVFADAAgAAAABKBIAqRQXqUG3+YFdNGxwmBqzaUISd/JF/ZeFWjtz0XVnom7mz9IyatdXTtyiucv0M24sjmNnbnV6msnl7ktX4XN3Q+j5y04kk+5RlY7zB0k7u1lol3RX5m0wqSTk+S1t16GPlW8eZ1vo5rL3Kl+6UFf5Mu7A3PqU8dQ+twTw8ZOcueWooJyyebSv3XPT8FOzzS1/Nv82XtqTvRk5WveMUlyjdpavt0uL1Sc+WrhTtw6cP4XFqSlKNNJNJ3k4x9CvaewqeHp1MVSjlrqLc5puVWomtYym7t6KxmbJUZSlWtmnTfDhdaRbSu136/u5mbRq+zl521l3sxzPDp3fONZsadDFUY14TqScdHCrUc3Sn9lR5Ly7DB3q3brYzD1KdGvUo1JRtGd2426NXv6NGDu7gOBjq+WcrKUKlOjfLCdKTlZO3Oz09DuKNWNVZldPR5X2XV/M1GHDboYatSwFPBYp/6jDOUZxcnPPTzNwqRb1cWnbxTXYcVgdmKntevg1H+Fm4iWtmpNNKSXNL2vQ9Y2tgZ+1WpWVW0FmaT9iLd13rV6HKbI4VTbLxNrOrg5QyyVmqkKkXddbxk7PufQk9tXzz9NrPdLA4hp1E5O7bm5ODnN6u9kn2Mxdq7h4Nx/h0oRaXOM53fqzo61dRnCMek3bnbWNvlcvynaN7vS1/Bl1jHjEN1ozxbwzqcNa2vFuba+Hpc3kNx8PBX1m12y1u/wRib9V39fsvZlCMm6idnxE0oy7muZsdjzdfCUK7qV81ajTnL+NP3nHX53NajFr7s00rKK8l8kcxtnYqp62X6na1sNL+bX/wDbI0+0MBm96dSXas029RKV5/iMCnqv9mamtQt2+p2+M2ekmlf1Ocx+Cj0NxmtAyC9XpKL0LBUCSCQAAAgkgkAlrYz6EeS/djEoLXwMyi/aXfoB0mwMPxKsV2fgj07Z1L4Vysk+ihHs9Tht0qS97t5Lx6nf4NKMLdbN9X2RX5nPpuNvRjdJclz/AKez9S/nurLl7z+7yS/FmLKTUcq96XPxZkcnb+p+C5IyrLpSs0uiu+79/mY+8NZKNKh25s8l2NJPn5tfMri2krayk727+xerXzNHvRRrQk61NucVRy1X8UHG9qi7rslb59ui3frf6S/NqrV5K2rly9GivHX4curNVuti4ywdKcITcZKUnKVklLNlso3u+VuXY2bCvj6KhKVScYQUJTcpaJxjzavzLE691raULzniFpkcaMe9QbcvnY2+xMSm5Rfw6Jr7Ld4+mnqc1sGvOeEdaStDFVauIpR6UJO0PVRT8yvZW0MuMjB6KonT/q+EI7Ku2011T1X4nmm8fFpYujiqNs1HNeKs/wCJmipU/uuMpNd7fU7yUuImpNq6s427OXoee7/zp4CEa1OnmVV8LJTjGOXKs2d2S+JxXmgs/rrbuFGhWvnVWjxHVXJ1Jzi/TKreRssbPLTqv7Mc3ktfyPONxdp4ieCxFOvxKMKWKgoqcZKUYVZNzp2l2LNF8jrd4NsU8PhKs5zWbgyjFP4puNkMR5l9J2NyYvENPWTtHwaOv3doOlgcLTlo4Yekmuksqb+bPNtnxltXa6lLNKhCSnPsSow5R83p5s9VjPRGqyqqrQ1mLRnzma/EyIrRY5HOY+HM6THPn4I0WLhe5uM1ymOgYDNptFpXV0atmmUAEoAAAIAAF6izLoq8kYEJWMujiEnf5BXZ7ExiglBHfbMxqah3q6XV6JfN/I8Yw+1XBOSV5vtfJIy4b3YhQUHGLs7qSbTS0ul6GLNWV7tRrLNdu7V9fxZkUZ3d78zxzC/SG8uWpSktLPJK9/U6Dd7fihkUZ1bNc87s/K/MzZWtj0+hLVyfwx08X2leDtJyurxk3GzXvRSs0+7VnL4XeSlUhkjJOU2lFxaaaZ0WzKibiuzI/VvmRWBtOpQwOFq04WhCKm122lLXKvX8DX7vbEoV8BDG4lSrVXKpVhGc55IKEmlHInaXu3d7nmu8ssVOVVVq050ac5WjGSSeV6XVr9iMjd/ePas5YLCUZOnQw05Tm8loSouWaaqya1SV0vvFxNeqVaqdOaWipzlGK6RdpRS7le3kcpXxDWIi1o4u6fenczKm1oLCVKi5RrOir/Fkk8tvJNf0nPfWr1Yzb5yT8mMHp8JQdKNe6XFd7auabS9mKXPW5xn0o5YbPxNWorVJ06WGw9O6vCEqsZTl4vKte42uxpuVPK5NPDyko6tXhK3Tp7X4HI/TFh+HhaEo+7OtFTftN3UJOOrfj6iTyX02NbeanPBUsRXmlxKMJPM9XLKr2XW9zzbefeapjWo+1w4aLM9ZJctFyNHXx1ScIU2/Zpxyxj3Xb1MfMzc5Z13m5GFUKM6s8VSw/Gy5YRdOVVxV9ZX5LXRHS8an/wBfUf3Y0vygebQ3px6ioxxE4xiklGMacUkuxWRRLeTHPniq399iWU16TOVN86+JqLoozSf9kEzFrSo/ZxDv25MX+J51LbGKlzxFd/8AlmvzKfrdR86lR+NSb/MYa7bExpfyqj+9Cf8AkarE1Kf8t+lNf5HP5m+bb8XcZSjYYqF6bmo2jfL8POzfYc+zpsRps+l96X4zOZZYiCSCSoAAACABJAJAzoUI5b6+7fn22ME2MH7D+4/wNcgAZUoMnhPoBm7B2m8JiadfLnUH7UL2urW07z3jdjbdLE0o1aM7rK9HpJNfC12PQ+eXB9GbPYO3a+CqZ6UtHbNTfuy/RmeprUuPoOOwsG6/1l0k6jkqlm26fEVmpZOV769L6mv352rChhst0pTdopJXd076Gp3U3zp42k1rCrTSzQfTsa6rs/3NTt6VWtU4Eq8JSqTtThwYzc5t6JPNp39DDTl8ZteU8FUocrYhTk+53nFr+6Roqe3qsH7LckuWZ80WdqVKiq1aU7RlGbhUindZ4NxtfyMBo3Iza3+K3yxs45YVODFpKSp85Ndrb1PYsVtPB4jAQqYyNOVGtTp1JRqK6u1fTpbXU+fWjPq7ZxM8PDCyqydGnpGGmi6X5tC8krqN5Np7KjSq4PCUk6TXEg4ZpN4l6Z3Uk7pJaJLTVnDgFiBNyAVEplyMyhU5PsZWsPPp80RVyNQv05pmN9Wl3epKoyXxAb/Gf8vpeMv8jlzqK0f+H0k39vX+45loQqkkWIKiQQABIJAglIlF2KCqoSla3ZaxMaSLkUVxM6qiNNdS5GCKk/Em370IpwyiVLuv8y4kVZf3cLjo/o/oxVXE/C3Rgrpcr1Fqrlja+OrYHEJ6TrU4NUars4U4Sv7ajb33eV22+Zk7kezPEv8A7dJdn22a/fOvfFuOXO3SprLry1J+xzNapKcpTk3KU5OUpPnKTd2/UttmRLBz5rLr2Zvd7tQsDPu8mmb2M5WK2VRpSfJPx5Gxp4bL8L8XG7KpWJpjXrDy7vUtyhrZXfkzZJIqSQ0+LX0oR+JSv4OxlU6cbXSa+RfUUQyWri3wl3kqCJbKXICZRLUkTKZYlMqM2pj5cGNGytG+tnfW/wCprWVSkW2yoEAgqJBAAqBAAlMrjIti4GVGZcUzDUipTJi6zFMqzGIqpKqkxdZeYlTRi8UqVQYa2WCxkqebLKUcySdm1dIpr13KWaTu3bVu79TBjVJ4hMXWTmFzH4gVQmLrIuM/eyxxSHVGGr7qd/yRS5rovQsOoRnLiavOa6L5ltyX7ZblMocy4mrucolULTmUuRcTVcpltyIuRcqJbIBAAAAAABIBAAAACSABNyblIAqzE5igAXFMnOWxcC5nGct3FwLnEHELYAuZyMxRcAVZiLlIAm4uQAAAAAAAAAAAAkgkgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJIAAkgAASABAAAAAAGAAAAAAAAAAAAAAAAAAAAH/2Q==" alt="Vinyl Album">
+      <h4>When we all fall asleep where do we go</h4>
+      <p>Billie Eilish</p>
+      </a>
                 
-            <a href="https://www.therevolverclub.com/products/billie-eilish-when-we-all-fall-asleep-where-do-we-go?_pos=2&_psq=when+we+all+fal&_ss=e&_v=1.0" target="_blank" class="card">
-              <img src="data:image/jpeg;base64,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" alt="Vinyl Album">
-                    <h4>When we all fall asleep where do we go</h4>
-                    <p>Billie Eilish</p>
-            </a>
-                
-                  <a href="https://www.therevolverclub.com/products/billie-eilish-happier-than-ever?_pos=1&_psq=happier&_ss=e&_v=1.0" target="_blank" class="card">
+      <a href="https://www.therevolverclub.com/products/billie-eilish-happier-than-ever?_pos=1&_psq=happier&_ss=e&_v=1.0" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/516x516/https%3A%2F%2Fimages.genius.com%2Fb826bffa6a542a466c2143f4702b9f25.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>Happier than ever</h4>
-                    <p>Billie eilish</p>
-
-                  </a>
+      <h4>Happier than ever</h4>
+      <p>Billie eilish</p>
+      </a>
                    
-                  <a href="https://www.therevolverclub.com/products/billie-eilish-dont-smile-at-me?_pos=1&_psq=dont+smil&_ss=e&_v=1.0" target="_blank" class="card">
+      <a href="https://www.therevolverclub.com/products/billie-eilish-dont-smile-at-me?_pos=1&_psq=dont+smil&_ss=e&_v=1.0" target="_blank" class="card">
       <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Billie_Eilish_-_Don%27t_Smile_at_Me.png" alt="Vinyl Album">
-                    <h4>Dont smile at me</h4>
-                    <p>Billie eilish</p>
-
-                  </a>
-                      <a href="https://shop.finneasofficial.com/products/optimist-standard-black-vinyl" target="_blank" class="card">
+      <h4>Dont smile at me</h4>
+      <p>Billie eilish</p>
+      </a>
+                      
+      <a href="https://shop.finneasofficial.com/products/optimist-standard-black-vinyl" target="_blank" class="card">
       <img src="https://upload.wikimedia.org/wikipedia/en/1/19/Finneas_-_Optimist.png" alt="Vinyl Album">
-                    <h4>Optimist</h4>
-                    <p>FINNEAS</p>
-
-                      </a>
-                          <a href="https://shop.finneasofficial.com/products/for-cryin-out-loud-standard-gold-biovinyl" target="_blank" class="card">
+      <h4>Optimist</h4>
+      <p>FINNEAS</p>
+      </a>
+                          
+      <a href="https://shop.finneasofficial.com/products/for-cryin-out-loud-standard-gold-biovinyl" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/516x516/https%3A%2F%2Fimages.genius.com%2F9920eedc54b1fcdcad1c236c7ba30ad0.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>For cryin' out loud!</h4>
-                    <p>FINNEAS</p>
-
-                          </a>
-                              <a href="https://www.therevolverclub.com/products/copy-of-various-vinyl-alt-pop?_pos=1&_sid=52f94cfcd&_ss=r" target="_blank" class="card">
+      <h4>For cryin' out loud!</h4>
+      <p>FINNEAS</p>
+      </a>
+                              
+      <a href="https://www.therevolverclub.com/products/copy-of-various-vinyl-alt-pop?_pos=1&_sid=52f94cfcd&_ss=r" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x600/https%3A%2F%2Fimages.genius.com%2F5ab132361f7fcd87bd90e77730107783.999x999x1.jpg" alt="Vinyl Album">
-                    <h4>Blood Harmony</h4>
-                    <p>FINNEAS</p>
-
-                              </a>
-                                <a href="https://shop.reneerapp.com/collections/music" target="_blank" class="card">
+      <h4>Blood Harmony</h4>
+      <p>FINNEAS</p>
+      </a>
+                                
+      <a href="https://shop.reneerapp.com/collections/music" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F5a37ee45679e203f1d82b773898d5453.1000x1000x1.png" alt="Vinyl Album">
-
-                    <h4>BITE ME</h4>
-                    <p>Renee Rapp</p>
-
-                                </a>
-                                  <a href="https://shop.reneerapp.com/products/snow-angel-standard-vinyl" target="_blank" class="card">
-                                          <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2Fc7b7972b534ce18a3d874fceda568a71.1000x1000x1.png" alt="Vinyl Album">
-
-                    <h4>Snow Angel</h4>
-                    <p>Renee Rapp</p>
-
-                                  </a>
-                                    <a href="https://www.amazon.com/BURY-ME-AT-MAKEOUT-CREEK/dp/B01AB6UOW6" target="_blank" class="card">
+      <h4>BITE ME</h4>
+      <p>Renee Rapp</p>
+      </a>
+                                  
+      <a href="https://shop.reneerapp.com/products/snow-angel-standard-vinyl" target="_blank" class="card">
+      <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2Fc7b7972b534ce18a3d874fceda568a71.1000x1000x1.png" alt="Vinyl Album">
+      <h4>Snow Angel</h4>
+      <p>Renee Rapp</p>
+      </a>
+                                    
+      <a href="https://www.amazon.com/BURY-ME-AT-MAKEOUT-CREEK/dp/B01AB6UOW6" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x600/https%3A%2F%2Fimages.genius.com%2F8aafb91d485accd94ca130c8164393c7.608x608x1.jpg" alt="Vinyl Album">
-                    <h4>Bury me at makeout creek</h4>
-                    <p>Mitski</p>
-
-                                    </a>
-                                      <a href="https://www.therevolverclub.com/products/weezer-blue-album-reissue-arrives-in-21-days?_pos=2&_psq=weezer&_ss=e&_v=1.0" target="_blank" class="card">
+      <h4>Bury me at makeout creek</h4>
+      <p>Mitski</p>
+      </a>
+                                      
+      <a href="https://www.therevolverclub.com/products/weezer-blue-album-reissue-arrives-in-21-days?_pos=2&_psq=weezer&_ss=e&_v=1.0" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x600/https%3A%2F%2Fimages.genius.com%2F374239f2a46a943d287600e32f950d00.1000x1000x1.jpg" alt="Vinyl Album">
-                    <h4>Weezer</h4>
-                    <p>Weezer</p>
-
-                                      </a>
-                                        <a href="https://wearethefavors.com/products/standard-vinyl" target="_blank" class="card">
+      <h4>Weezer</h4>
+      <p>Weezer</p>
+      </a>
+                                        
+      <a href="https://wearethefavors.com/products/standard-vinyl" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/516x516/https%3A%2F%2Fimages.genius.com%2F4f3588794900fccd899004e47fb62d7e.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>The Dream</h4>
-                    <p>The favours</p>
-
-                                        </a>
-                                          <a href="https://www.therevolverclub.com/products/nirvana-incesticide?_pos=5&_sid=3c337860f&_ss=r" target="_blank" class="card">
+      <h4>The Dream</h4>
+      <p>The favours</p>
+      </a>
+                                         
+      <a href="https://www.therevolverclub.com/products/nirvana-incesticide?_pos=5&_sid=3c337860f&_ss=r" target="_blank" class="card">
       <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Montage_of_Heck_The_Home_Recordings_%28Deluxe%29.jpg" alt="Vinyl Album">
-                    <h4>Montage of Heck:The Home Recordings </h4>
-                    <p>Kurt Cobain</p>
-
-                                          </a>
-                                            <a href="https://www.therevolverclub.com/products/nirvana-nevermind-trc?_pos=1&_sid=3c337860f&_ss=r" target="_blank" class="card">
+      <h4>Montage of Heck:The Home Recordings </h4>
+      <p>Kurt Cobain</p>
+      </a>
+                                            
+      <a href="https://www.therevolverclub.com/products/nirvana-nevermind-trc?_pos=1&_sid=3c337860f&_ss=r" target="_blank" class="card">
       <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg" alt="Vinyl Album">
-                    <h4>Nevermind</h4>
-                    <p>Nirvana</p>
-
-                                            </a>
-                                              <a href="https://www.therevolverclub.com/products/nirvana-incesticide?_pos=5&_sid=3c337860f&_ss=r" target="_blank" class="card">
+      <h4>Nevermind</h4>
+      <p>Nirvana</p>
+      </a>
+                                              
+      <a href="https://www.therevolverclub.com/products/nirvana-incesticide?_pos=5&_sid=3c337860f&_ss=r" target="_blank" class="card">
       <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/In_Utero_%28Nirvana%29_album_cover.jpg" alt="Vinyl Album">
-                    <h4>In Utero</h4>
-                    <p>Nirvana</p>
-
-                                              </a>
-                                                <a href="https://www.therevolverclub.com/products/nirvana-incesticide?_pos=5&_sid=3c337860f&_ss=r" target="_blank" class="card">
+      <h4>In Utero</h4>
+      <p>Nirvana</p>
+      </a>
+                                                
+      <a href="https://www.therevolverclub.com/products/nirvana-incesticide?_pos=5&_sid=3c337860f&_ss=r" target="_blank" class="card">
       <img src="https://upload.wikimedia.org/wikipedia/en/8/85/Nirvana-Incesticide.jpg" alt="Vinyl Album">
-                    <h4>Incesticide</h4>
-                    <p>Nirvana</p>
-
-                                                </a>
-                                                  <a href="https://vinylscout.shop/gb/album/her-love-still-haunts-me-like-a-ghost-montell-fish" target="_blank" class="card">
+      <h4>Incesticide</h4>
+      <p>Nirvana</p>
+      </a>
+                                                  
+      <a href="https://vinylscout.shop/gb/album/her-love-still-haunts-me-like-a-ghost-montell-fish" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F5f2e182b0ac1bed61ec516980d600a2c.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>Her Love Still Haunts Me Like A Ghost</h4>
-                    <p>Montell Fish</p>
-                                                  </a>
-                                                    <a href="https://blackdresses.bandcamp.com/album/wasteisolation" target="_blank" class="card">
+      <h4>Her Love Still Haunts Me Like A Ghost</h4>
+      <p>Montell Fish</p>
+      </a>
+                                                    
+      <a href="https://blackdresses.bandcamp.com/album/wasteisolation" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F0f4bb715526d683383e4128a5b5d653c.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>WASTEISOLATION</h4>
-                    <p>Black Dresses</p>
-
-                                                    </a>
-                                                      <a href="https://shop.conangray.com/products/superache-lp" target="_blank" class="card">
+      <h4>WASTEISOLATION</h4>
+      <p>Black Dresses</p>
+      </a>
+                                                      
+      <a href="https://shop.conangray.com/products/superache-lp" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F94720080e32c14eb6093aef03bf5749c.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>Superache</h4>
-                    <p>Conan Gray</p>
-
-                                                      </a>
-                                                        <a href="https://www.therevolverclub.com/collections/new-vinyl" target="_blank" class="card">
+      <h4>Superache</h4>
+      <p>Conan Gray</p>
+      </a>
+                                                        
+      <a href="https://www.therevolverclub.com/collections/new-vinyl" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2Fe236efba1674ce0b27a12017b898afa1.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>if i could make it go quiet</h4>
-                    <p>Girl in red</p>
-
-                                                        </a>
-                                                          <a href="https://www.therevolverclub.com/products/britney-spears-blackout?_pos=1&_psq=blackout&_ss=e&_v=1.0" target="_blank" class="card">
+      <h4>if i could make it go quiet</h4>
+      <p>Girl in red</p>
+      </a>
+                                                          
+      <a href="https://www.therevolverclub.com/products/britney-spears-blackout?_pos=1&_psq=blackout&_ss=e&_v=1.0" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2Fc1fc3b9a7297165924e0fabc54943089.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>Blackout</h4>
-                    <p>Britney Spears</p>
-
-                                                          </a>
-                                                            <a href="https://www.amazon.in/Sunburn-Dominic-Fike/dp/B0C6B4CJ8H" target="_blank" class="card">
+      <h4>Blackout</h4>
+      <p>Britney Spears</p>
+      </a>
+                                                            
+      <a href="https://www.amazon.in/Sunburn-Dominic-Fike/dp/B0C6B4CJ8H" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F045fd7af9c02255489962620f4a0b920.999x999x1.png" alt="Vinyl Album">
-                    <h4>Sunburn</h4>
-                    <p>Dominic Fike</p>
-
-                                                            </a>
-                                                              <a href="https://www.therevolverclub.com/blogs/the-revolver-club/the-rise-of-doja-cat?_pos=1&_sid=1bc4aceeb&_ss=r" target="_blank" class="card">
+      <h4>Sunburn</h4>
+      <p>Dominic Fike</p>
+      </a>
+                                                              
+      <a href="https://www.therevolverclub.com/blogs/the-revolver-club/the-rise-of-doja-cat?_pos=1&_sid=1bc4aceeb&_ss=r" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F30168a06fda934575c821b8ea33900cf.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>Planet Her</h4>
-                    <p>Doja Cat</p>
-
-                                                              </a>
-                                                                <a href="https://www.therevolverclub.com/products/arctic-monkeys-am-cd-arrives-in-21-days" target="_blank" class="card">
+      <h4>Planet Her</h4>
+      <p>Doja Cat</p>
+      </a>
+                                                                
+      <a href="https://www.therevolverclub.com/products/arctic-monkeys-am-cd-arrives-in-21-days" target="_blank" class="card">
       <img src="https://www.therevolverclub.com/cdn/shop/files/s-l400_1_1549b286-703f-46f5-be89-037589d90379.jpg?v=1755248083&width=400" alt="Vinyl Album">
-                    <h4>AM</h4>
-                    <p>Arctic Monkeys</p>
-
-                                                                </a>
-                                                                  <a href="https://www.therevolverclub.com/products/ariana-grande-sweetener-trc?_pos=4&_sid=4fd1daec6&_ss=r" target="_blank" class="card">
+      <h4>AM</h4>
+      <p>Arctic Monkeys</p>
+      </a>
+                                                                  
+      <a href="https://www.therevolverclub.com/products/ariana-grande-sweetener-trc?_pos=4&_sid=4fd1daec6&_ss=r" target="_blank" class="card">
       <img src="https://www.therevolverclub.com/cdn/shop/products/1_f39194ab-c4de-45f2-8bb9-08a4d6e450a5.jpg?v=1755171798&width=400" alt="Vinyl Album">
-                    <h4>Sweetener</h4>
-                    <p>Ariana Grande</p>
-
-                                                                  </a>
-                                                                    <a href="https://www.therevolverclub.com/products/tyler-the-creator-chromakopia-quick-ship?_pos=19&_sid=d9c327dcc&_ss=r" target="_blank" class="card">
+      <h4>Sweetener</h4>
+      <p>Ariana Grande</p>
+      </a>
+                                                                    
+      <a href="https://www.therevolverclub.com/products/tyler-the-creator-chromakopia-quick-ship?_pos=19&_sid=d9c327dcc&_ss=r" target="_blank" class="card">
       <img src="https://www.therevolverclub.com/cdn/shop/files/NTctMjAxMy5qcGVn.png?v=1762772137&width=600" alt="Vinyl Album">
-                    <h4>CHROMAKOPIA</h4>
-                    <p>Tyler,the creator</p>
-
-                                                                    </a>
-                                                                      <a href="https://store.childishgambino.com/products/camp-vinyl-lp" target="_blank" class="card">
+      <h4>CHROMAKOPIA</h4>
+      <p>Tyler,the creator</p>
+      </a>
+                                                                      
+      <a href="https://store.childishgambino.com/products/camp-vinyl-lp" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F84e84f918a6b65616031289ce5ab2f4d.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>Camp</h4>
-                    <p>Childish Gambino</p>
-
-                                                                      </a>
-                                                                        <a href="https://www.amazon.in/Be-Cowboy-Mitski/dp/B07D3DBCCV" target="_blank" class="card">
+      <h4>Camp</h4>
+      <p>Childish Gambino</p>
+      </a>
+                                                                        
+      <a href="https://www.amazon.in/Be-Cowboy-Mitski/dp/B07D3DBCCV" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2Fffa06c3ce8ea946089ebc6b8b64c881c.1000x1000x1.jpg" alt="Vinyl Album">
-                    <h4>Be the cowboy</h4>
-                    <p>Mitski</p>
-
-                                                                        </a>
-                                                                          <a href="https://www.amazon.com/Puberty-2-Mitski/dp/B01CDTYFOW" target="_blank" class="card">
+      <h4>Be the cowboy</h4>
+      <p>Mitski</p>
+      </a>
+                                                                         
+      <a href="https://www.amazon.com/Puberty-2-Mitski/dp/B01CDTYFOW" target="_blank" class="card">
       <img src="https://t2.genius.com/unsafe/600x0/https%3A%2F%2Fimages.genius.com%2F7ed4938e517bad06f43336a6854e71a1.1000x1000x1.png" alt="Vinyl Album">
-                    <h4>Puberty 2</h4>
-                    <p>Mitski</p>
-
-                                                                          </a>
-                                                                            <a href="https://www.therevolverclub.com/products/lady-gaga-born-this-way?_pos=4&_psq=lady+gaga&_ss=e&_v=1.0" target="_blank" class="card">
+      <h4>Puberty 2</h4>
+      <p>Mitski</p>
+      </a>
+                                                                            
+      <a href="https://www.therevolverclub.com/products/lady-gaga-born-this-way?_pos=4&_psq=lady+gaga&_ss=e&_v=1.0" target="_blank" class="card">
       <img src="https://www.therevolverclub.com/cdn/shop/products/R-4486286-1527930631-5983.jpg?v=1755171904&width=600" alt="Vinyl Album">
-                    <h4>Born this way</h4>
-                    <p>Lady Gaga</p>
-                                                                            </a>
+      <h4>Born this way</h4>
+      <p>Lady Gaga</p>
+      </a>
 
 
-                <a href="https://www.therevolverclub.com/collections/new-vinyl/products/eminem-curtain-call-the-hits-3" target="_blank" class="card">
+      <a href="https://www.therevolverclub.com/collections/new-vinyl/products/eminem-curtain-call-the-hits-3" target="_blank" class="card">
       <img src="https://www.therevolverclub.com/cdn/shop/products/R-1100102-1192007160.jpg?v=1754926285&width=300" alt="Vinyl Album">
-                    <h4>Curtain Call</h4>
-                    <p>Eminem</p>
-
-                  </a>
+      <h4>Curtain Call</h4>
+      <p>Eminem</p>
+      </a>
                    
-                  <a href="https://www.therevolverclub.com/products/the-weeknd-dawn-fm-arrives-in-12-days?_pos=7&_sid=39ce9cd1e&_ss=r" target="_blank" class="card">
+                  
+      <a href="https://www.therevolverclub.com/products/the-weeknd-dawn-fm-arrives-in-12-days?_pos=7&_sid=39ce9cd1e&_ss=r" target="_blank" class="card">
       <img src="https://www.therevolverclub.com/cdn/shop/files/The_Weeknd_Dawn_FM.jpg?v=1755171500&width=700" alt="Vinyl Album">
-                    <h4>Dawn FM</h4>
-                    <p>Weeknd</p>
+      <h4>Dawn FM</h4>
+      <p>Weeknd</p>
+      </a>
 
-                  </a>
-                </div>
 
-        </main>
+      <a href="https://www.therevolverclub.com/products/dua-lipa-future-nostalgia-1?_pos=1&_psq=future&_ss=e&_v=1.0" target="_blank" class="card">
+      <img src="https://www.therevolverclub.com/cdn/shop/files/CS770118-01A-BIG.jpg?v=1755171827&width=700" alt="Vinyl Album">
+      <h4>Future Nostalgia</h4>
+      <p>Dua Lipa</p>
+      </a>
+                   
+                  
+      <a href="https://www.therevolverclub.com/products/sabrina-carpenter-short-n-sweet-quick-ship-1?_pos=2&_psq=sabrina&_ss=e&_v=1.0" target="_blank" class="card">
+      <img src="https://www.therevolverclub.com/cdn/shop/files/Untitleddesign_1_7b1bfce8-a3a2-4d0d-ad20-f028cbfb21fb.png?v=1755171364&width=1000" alt="Vinyl Album">
+      <h4>Short N' Sweet</h4>
+      <p>Sabrina Carpenter</p>
+      </a>
+     </div>
 
-    </div>
+  </main>
 
+<section class="trust-bar">
+  <div class="trust-item">
+    <span class="trust-icon">🛡️</span>
+    <p>Secure Payments + EMI Options</p>
+  </div>
+
+  <div class="trust-item center">
+    <span class="trust-icon">👥</span>
+    <p>Personalized Consultation</p>
+    <a href="#" class="trust-link">CONNECT NOW</a>
+  </div>
+
+  <div class="trust-item">
+    <span class="trust-icon">🚚</span>
+    <p>Shipping Nationwide</p>
+  </div>
+</section>
  
 <footer class="simple-footer">
   <div class="footer-links">
@@ -291,14 +333,44 @@
       <a href="https://www.therevolverclub.com/pages/our-approach">Our Approach</a>
       <a href="https://www.therevolverclub.com/pages/careers">Careers</a>
     </div>
+
+     <div>
+      <h4>Vinyls</h4>
+      <a href="https://www.therevolverclub.com/pages/trc-projects">Trc Projects</a>
+      <a href="https://www.therevolverclub.com/pages/featured-vinyl-heads">VinylHeads</a>
+      <a href="https://www.therevolverclub.com/pages/return-policy">Return Policy</a>
+    </div>
+
+    <div>
+      <h4>About TRC</h4>
+      <a href="https://www.therevolverclub.com/pages/billing-details">Financial Information</a>
+      <a href="https://discord.com/invite/D8bsywndxH">Join Our Discord Server</a>
+      <a href="https://www.instagram.com/therevolverclub">Magazine</a>
+    </div>
   </div>
 
   <p class="footer-note">
+    <img
+  src="https://www.therevolverclub.com/cdn/shop/files/TRC_Logo_HighRes_1f1147db-ab8a-4f7a-88f6-a5319791aecb.png?v=1714556628&width=380"
+  alt="The Revolver Club"
+  class="footer-logo"
+/>
     Student project inspired by
     <a href="https://www.therevolverclub.com" target="_blank">
       The Revolver Club
     </a>
   </p>
 </footer>
+<div class="floating-cta">
+  <a href="#" class="cta-btn">
+    <span class="cta-icon">📞</span>
+    Gear Consultation
+  </a>
+
+  <a href="#" class="cta-btn secondary">
+    <span class="cta-icon">💿</span>
+    Request a Record
+  </a>
+</div>
 </body>
 </html>

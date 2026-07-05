@@ -7,12 +7,17 @@ import "../styles/genres.css";
 
 export default function Genres() {
 
-  const genres = [...new Set(albums.map(album => album.genre))].sort();
+  const genres = [
+    ...new Set(
+      albums.map(album => album.genre.trim())
+    ),
+  ].sort();
 
   const [selectedGenre, setSelectedGenre] = useState(genres[0]);
 
   const genreAlbums = albums.filter(
-    album => album.genre === selectedGenre
+    album =>
+      album.genre.trim() === selectedGenre
   );
 
   return (
@@ -43,11 +48,13 @@ export default function Genres() {
 
         </div>
 
-        <h2>{selectedGenre}</h2>
+        <h2 className="genre-heading">
+          {selectedGenre}
+        </h2>
 
         <div className="genre-grid">
 
-          {genreAlbums.map(album => (
+          {genreAlbums.map((album) => (
 
             <AlbumCard
               key={album.id}

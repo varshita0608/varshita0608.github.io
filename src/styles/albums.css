@@ -1,0 +1,15 @@
+.albums-page{
+    padding:120px 60px 60px;
+}
+
+.albums-page h1{
+   color:var(--text);
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+.albums-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:25px;
+}

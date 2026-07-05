@@ -1,0 +1,118 @@
+.vinyl-day{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:70px;
+
+padding:90px 80px;
+
+}
+
+.vinyl-day img{
+
+width:340px;
+
+border-radius:18px;
+
+box-shadow:0 25px 50px rgba(0,0,0,.45);
+
+}
+
+.vinyl-info{
+
+max-width:500px;
+
+}
+
+.vinyl-info span{
+
+letter-spacing:4px;
+
+color:var(--text-secondary);
+
+font-size:12px;
+
+}
+
+.vinyl-info h2{
+
+font-size:54px;
+
+margin:20px 0 10px;
+
+color:#f5f5f5;
+
+}
+
+.vinyl-info h3{
+
+font-size:28px;
+
+color:#d7b98f;
+
+margin-bottom:10px;
+
+}
+
+.vinyl-info p{
+
+color:var(--text-secondary);
+
+margin-bottom:25px;
+
+}
+
+.vinyl-info h4{
+
+font-size:34px;
+
+margin-bottom:30px;
+
+}
+
+.vinyl-buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.vinyl-buttons button{
+
+padding:15px 28px;
+
+cursor:pointer;
+
+}
+
+.outline{
+
+background:transparent;
+
+border:1px solid #888;
+
+color:var(--text);
+
+}
+@media (max-width:768px){
+
+.vinyl-day{
+
+flex-direction:column;
+text-align:center;
+padding:50px 20px;
+
+}
+
+.vinyl-day img{
+
+width:260px;
+
+}
+
+}
